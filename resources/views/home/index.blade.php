@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Welcome To Here</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset("home/index/lib/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
