@@ -46,23 +46,23 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+            <a class="navbar-brand page-scroll" href="#page-top">Zhou AiLing</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Services</a>
+                        <a class="nav-link page-scroll" href="#services">兴趣</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="nav-link page-scroll" href="#portfolio">旅途</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
+                        <a class="nav-link page-scroll" href="#about">时间轴</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#team">Team</a>
+                        <a class="nav-link page-scroll" href="#team">朋友</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                        <a class="nav-link page-scroll" href="#contact">联系我未完待续...</a>
                     </li>
                 </ul>
             </div>
@@ -74,7 +74,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome To My Home!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
+                <div class="intro-heading">欢迎，我的朋友</div>
                 <a href="#services" class="page-scroll btn btn-xl">Find More Interting</a>
             </div>
         </div>
@@ -85,8 +85,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">兴趣</h2>
+                    <h3 class="section-subheading text-muted">享受生活,追逐快乐</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -95,24 +95,24 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">购物</h4>
+                    <p class="text-muted">开发中...</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">视频</h4>
+                    <p class="text-muted">开发中...</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">网站</h4>
+                    <p class="text-muted">开发中...</p>
                 </div>
             </div>
         </div>
@@ -123,8 +123,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">旅途未完待续...</h2>
+                    <h3 class="section-subheading text-muted">开发中...</h3>
                 </div>
             </div>
             <div class="row">
@@ -135,11 +135,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/01-thumbnail.jpg" class="img-fluid" alt="">
+                        <img src="{{asset("home/index/img/portfolio/01-thumbnail.jpg")}}")}}" class="img-fluid" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Threads</h4>
-                        <p class="text-muted">Illustration</p>
+                        <h4>开发中...</h4>
+                        <p class="text-muted">开发中...</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -149,11 +149,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/02-thumbnail.jpg" class="img-fluid" alt="">
+                        <img src="{{asset("home/index/img/portfolio/02-thumbnail.jpg")}}" class="img-fluid" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Explore</h4>
-                        <p class="text-muted">Graphic Design</p>
+                        <h4>开发中...</h4>
+                        <p class="text-muted">开发中...</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -163,11 +163,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/03-thumbnail.jpg" class="img-fluid" alt="">
+                        <img src="{{asset("home/index/img/portfolio/03-thumbnail.jpg")}}" class="img-fluid" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Finish</h4>
-                        <p class="text-muted">Identity</p>
+                        <h4>开发中...</h4>
+                        <p class="text-muted">开发中...</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -177,11 +177,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/04-thumbnail.jpg" class="img-fluid" alt="">
+                        <img src="{{asset("home/index/img/portfolio/04-thumbnail.jpg")}}" class="img-fluid" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Lines</h4>
-                        <p class="text-muted">Branding</p>
+                        <h4>开发中...</h4>
+                        <p class="text-muted">开发中...</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -191,11 +191,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/05-thumbnail.jpg" class="img-fluid" alt="">
+                        <img src="{{asset("home/index/img/portfolio/05-thumbnail.jpg")}}" class="img-fluid" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Southwest</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>开发中...</h4>
+                        <p class="text-muted">开发中...</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -205,11 +205,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/06-thumbnail.jpg" class="img-fluid" alt="">
+                        <img src="{{asset("home/index/img/portfolio/06-thumbnail.jpg")}}" class="img-fluid" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Window</h4>
-                        <p class="text-muted">Photography</p>
+                        <h4>开发中...</h4>
+                        <p class="text-muted">开发中...</p>
                     </div>
                 </div>
             </div>
@@ -221,8 +221,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">时间轴</h2>
+                    <h3 class="section-subheading text-muted">开发中.</h3>
                 </div>
             </div>
             <div class="row">
@@ -230,65 +230,65 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                                <img class="rounded-circle img-fluid" src="{{asset("home/index/img/about/1.jpg")}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4>2013-2014</h4>
+                                    <h4 class="subheading">Beginnings</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">开发中...</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                                <img class="rounded-circle img-fluid" src="{{asset("home/index/img/about/2.jpg")}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4 class="subheading">开发中...</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">开发中...</p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                                <img class="rounded-circle img-fluid" src="{{asset("home/index/img/about/3.jpg")}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4 class="subheading">开发中...</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">开发中...</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                                <img class="rounded-circle img-fluid" src="{{asset("home/index/img/about/4.jpg")}}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4 class="subheading">开发中...</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">开发中...</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
+                                <h4>We 
+                                    <br>Will
+                                    <br>Continue</h4>
                             </div>
                         </li>
                     </ul>
@@ -302,16 +302,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">朋友</h2>
+                    <h3 class="section-subheading text-muted">	</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="mx-auto rounded-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
+                        <img src="{{asset("home/index/img/team/1.jpg")}}" class="mx-auto rounded-circle" alt="">
+                        <h4>路人甲</h4>
+                        <p class="text-muted">干了什么事情</p>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -324,9 +324,9 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="mx-auto rounded-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
+                        <img src="{{asset("home/index/img/team/2.jpg")}}" class="mx-auto rounded-circle" alt="">
+                        <h4>路人乙</h4>
+                        <p class="text-muted">干了什么事情</p>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -339,9 +339,9 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/3.jpg" class="mx-auto rounded-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
+                        <img src="{{asset("home/index/img/team/3.jpg")}}" class="mx-auto rounded-circle" alt="">
+                        <h4>路人丙</h4>
+                        <p class="text-muted">干了什么事情</p>
                         <ul class="list-inline social-buttons">
                             <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -355,47 +355,20 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p class="large text-muted">我的大学</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clients -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-fluid d-block mx-auto" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-fluid d-block mx-auto" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-fluid d-block mx-auto" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-fluid d-block mx-auto" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
 
     <!-- Contact -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Contact Me</h2>
+                    <h3 class="section-subheading text-muted">115063373@qq.com</h3>
                 </div>
             </div>
             <div class="row">
@@ -439,7 +412,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2017</span>
+                    <span class="copyright">Copyright &copy;zhouailing.cn 2017</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -453,9 +426,9 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li class="list-inline-item"><a href="#">Privacy Policy</a>
+                        <li class="list-inline-item"><a href="#">Design By</a>
                         </li>
-                        <li class="list-inline-item"><a href="#">Terms of Use</a>
+                        <li class="list-inline-item"><a href="#">Mr.Sun</a>
                         </li>
                     </ul>
                 </div>
@@ -480,14 +453,14 @@
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2>未完待续...</h2>
+                                <p class="item-intro text-muted">未完待续...</p>
+                                <img class="img-fluid d-block mx-auto" src="{{asset("home/index/img/portfolio/01-full.jpg")}}" alt="">
+                                <p>未完待续...</p>
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
+                                    <li>未完待续...</li>
+                                    <li>未完待续...</li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
@@ -515,7 +488,7 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                                <img class="img-fluid d-block mx-auto" src="{{asset("home/index/img/portfolio/02-full.jpg")}}" alt="">
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
@@ -546,14 +519,14 @@
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2>未完待续...</h2>
+                                <p class="item-intro text-muted">未完待续...</p>
+                                <img class="img-fluid d-block mx-auto" src="{{asset("home/index/img/portfolio/03-full.jpg")}}" alt="">
+                                <p>未完待续...</p>
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
-                                    <li>Client: Finish</li>
-                                    <li>Category: Identity</li>
+                                    <li>未完待续...</li>
+                                    <li>未完待续...</li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
@@ -579,14 +552,14 @@
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2>未完待续...</h2>
+                                <p class="item-intro text-muted">未完待续...</p>
+                                <img class="img-fluid d-block mx-auto" src="{{asset("home/index/img/portfolio/04-full.jpg")}}" alt="">
+                                <p>未完待续...</p>
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
-                                    <li>Client: Lines</li>
-                                    <li>Category: Branding</li>
+                                    <li>未完待续...</li>
+                                    <li>未完待续...</li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
@@ -612,14 +585,14 @@
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2>未完待续...</h2>
+                                <p class="item-intro text-muted">未完待续....</p>
+                                <img class="img-fluid d-block mx-auto" src="{{asset("home/index/img/portfolio/05-full.jpg")}}" alt="">
+                                <p>未完待续...!</p>
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
-                                    <li>Client: Southwest</li>
-                                    <li>Category: Website Design</li>
+                                    <li>未完待续...</li>
+                                    <li>未完待续...</li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
@@ -645,14 +618,14 @@
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2>未完待续...</h2>
+                                <p class="item-intro text-muted">未完待续...</p>
+                                <img class="img-fluid d-block mx-auto" src="{{asset("home/index/img/portfolio/06-full.jpg")}}" alt="">
+                                <p>未完待续...</p>
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
-                                    <li>Client: Window</li>
-                                    <li>Category: Photography</li>
+                                    <li>未完待续...</li>
+                                    <li>未完待续...</li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
@@ -664,19 +637,19 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/tether/tether.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{asset("home/index/lib/jquery/jquery.min.js")}}"></script>
+    <script src="{{asset("home/index/lib/tether/tether.min.js")}}"></script>
+    <script src="{{asset("home/index/lib/bootstrap/js/bootstrap.min.js")}}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{{asset("https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")}}"></script>
 
     <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="{{asset("home/index/js/jqBootstrapValidation.js")}}"></script>
+    <script src="{{asset("home/index/js/contact_me.js")}}"></script>
 
     <!-- Cusotm JavaScript for this theme -->
-    <script src="js/agency.min.js"></script>
+    <script src="{{asset("home/index/js/agency.min.js")}}"></script>
 
 </body>
 
