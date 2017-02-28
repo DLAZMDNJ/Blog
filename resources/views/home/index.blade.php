@@ -11,17 +11,17 @@
     <title>Agency - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset("home/index/lib/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
 
     <!-- Additional fonts for this theme -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="{{asset("home/index/lib/font-awesome/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css">
+    <link href="{{asset("https://fonts.googleapis.com/css?family=Montserrat:400,700")}}" rel="stylesheet" type="text/css">
+    <link href="{{asset("https://fonts.googleapis.com/css?family=Kaushan+Script")}}" rel='stylesheet' type='text/css'>
+    <link href="{{asset("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic")}}" rel='stylesheet' type='text/css'>
+    <link href="{{asset("https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700")}}" rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this theme -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="{{asset("home/index/css/agency.min.css")}}" rel="stylesheet">
 
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
