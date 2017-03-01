@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'Home\HomeController@index');
-Route::get('/admin', function () {
-	return view('admin.index');
-});
+Route::get('/admin', 'Admin\AdminController@index');
+
+
 	
