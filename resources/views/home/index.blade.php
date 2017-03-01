@@ -62,7 +62,7 @@
                         <a class="nav-link page-scroll" href="#team">朋友</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">联系我未完待续...</a>
+                        <a class="nav-link page-scroll" href="#contact">联系我</a>
                     </li>
                 </ul>
             </div>
@@ -123,7 +123,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">旅途未完待续...</h2>
+                    <h2 class="section-heading">旅途.</h2>
                     <h3 class="section-subheading text-muted">开发中...</h3>
                 </div>
             </div>
@@ -462,7 +462,7 @@
                                     <li>未完待续...</li>
                                     <li>未完待续...</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>关闭</button>
                             </div>
                         </div>
                     </div>
@@ -486,16 +486,16 @@
                         <div class="col-lg-8 offset-lg-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <h2>未完待续...</h2>
+                                <p class="item-intro text-muted">未完待续...</p>
                                 <img class="img-fluid d-block mx-auto" src="{{asset("home/index/img/portfolio/02-full.jpg")}}" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p>未完待续...</p>
                                 <ul class="list-inline">
                                     <li>Date: January 2017</li>
-                                    <li>Client: Explore</li>
-                                    <li>Category: Graphic Design</li>
+                                    <li>未完待续...</li>
+                                    <li>未完待续...</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> 关闭</button>
                             </div>
                         </div>
                     </div>
@@ -528,7 +528,7 @@
                                     <li>未完待续...</li>
                                     <li>未完待续...</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>关闭</button>
                             </div>
                         </div>
                     </div>
@@ -561,7 +561,7 @@
                                     <li>未完待续...</li>
                                     <li>未完待续...</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> 关闭</button>
                             </div>
                         </div>
                     </div>
@@ -594,7 +594,7 @@
                                     <li>未完待续...</li>
                                     <li>未完待续...</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> 关闭</button>
                             </div>
                         </div>
                     </div>
@@ -627,7 +627,7 @@
                                     <li>未完待续...</li>
                                     <li>未完待续...</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>关闭</button>
                             </div>
                         </div>
                     </div>
