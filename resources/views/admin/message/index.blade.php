@@ -7,7 +7,8 @@
 	
 				<div class="row">
                     <div class="col-lg-12">
-                        <h2>兴趣管理</h2>
+                        <h2>兴趣管理</h2> 
+                       <h4><a href="/admin/message/add">新增</a></h4>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover">
                                 <thead>
@@ -19,12 +20,13 @@
                                         <th>操作</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>/index.html</td>
-                                        <td>1265</td>
-                                        <td>32.3%</td>
-                                        <td>$321.33</td>
+                                <tbody>                              
+                                    	@foreach($data as $v)
+                                    	<tr>
+                                        <td>{{$v->id}}</td>
+                                        <td>{{$v->name}}</td>
+                                        <td>{{$v->pic}}</td>
+                                        <td>{{$v->dic}}</td>
                                         <td>
                                         <a href="">
                                         修改</a>
@@ -35,7 +37,9 @@
                                         <a href="">
                                         查看</a>
                                         </td>
-                                    </tr>
+                                          </tr>	
+                                        @endforeach
+                                  
 
                                 </tbody>
                             </table>

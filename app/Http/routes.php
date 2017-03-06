@@ -16,7 +16,8 @@ Route::get('/root', 'Admin\AdminController@index');
 
 
 Route::get('/admin/message/index', 'Admin\MessageController@index');
-
+Route::get('/admin/message/add','Admin\MessageController@add');
+Route::post('/admin/message/doAdd','Admin\MessageController@doAdd');
 
 
 	
