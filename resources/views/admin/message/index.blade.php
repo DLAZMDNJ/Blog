@@ -28,15 +28,11 @@
                                         <td><img src="{{$v->pic}}" width="50px;"></td>
                                         <td>{{$v->dic}}</td>
                                         <td>
-                                        <a href="">
+                                        <a href="/admin/message/edit/{{$v->id}}">
                                         修改</a>
-                                        --|
-                                        <a href="">
-                                        删除</a>
-                                        --|
-                                        <a href="">
-                                        查看</a>
-                                        </td>
+                                        ----|----
+                                        <a href="/admin/message/delete/{{$v->id}}">
+                                        删除</a>                                    
                                           </tr>	
                                         @endforeach
                                   

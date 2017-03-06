@@ -22,9 +22,27 @@ class MessageController extends Controller
     }
     public function doAdd(Request $request)
     {
-		    	$data = $request->except('_token');
-		    	DB::table('blog_interest')->insert(['name'=>$data['name'],'pic'=>$data['pic'],'dic'=>$data['dic']]);
-		    	$inter = DB::table('blog_interest')->get();
-		    	return view('admin.message.index',['data' => $inter]);
+		$data = $request->except('_token');
+		DB::table('blog_interest')->insert(['name'=>$data['name'],'pic'=>$data['pic'],'dic'=>$data['dic']]);
+		$inter = DB::table('blog_interest')->get();
+		return view('admin.message.index',['data' => $inter]);
+    }
+    public function edit($id)
+    {	
+    	$inter = DB::table('blog_interest')->where('id',$id)->first();
+    	return view('admin.message.edit',['data' => $inter]);
+    }
+    public function doEdit(Request $request)
+    {
+    	$data = $request->except('_token');
+    	DB::table('blog_interest')->where('id',$data['id'])->update(['name'=>$data['name'],'pic'=>$data['pic'],'dic'=>$data['dic']]);
+    	$inter = DB::table('blog_interest')->get();
+    	return view('admin.message.index',['data' => $inter]);
+    }
+    public function delete($id)
+    {
+    	DB::table('blog_interest')->where('id',$id)->delete();
+    	$inter = DB::table('blog_interest')->get();
+    	return view('admin.message.index',['data' => $inter]);
     }
 }
