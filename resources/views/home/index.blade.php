@@ -62,7 +62,8 @@
                         <a class="nav-link page-scroll" href="#team">朋友</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">联系我</a>
+                        <a class="nav-link page-scroll" href="#contact">联系我
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -90,30 +91,17 @@
                 </div>
             </div>
             <div class="row text-center">
+                @foreach($inter as $v)   
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">购物</h4>
-                    <p class="text-muted">开发中...</p>
+                    <h4 class="service-heading">{{$v->name}}</h4>
+                    <p class="text-muted">{{$v->dic}}</p>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">视频</h4>
-                    <p class="text-muted">开发中...</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">网站</h4>
-                    <p class="text-muted">开发中...</p>
-                </div>
+           		 @endforeach
+                
             </div>
         </div>
     </section>
