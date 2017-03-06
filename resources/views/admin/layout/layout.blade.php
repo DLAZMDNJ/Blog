@@ -154,7 +154,7 @@
                         <a href="{{asset('/admin/message/index')}}"><i class="fa fa-fw fa-bar-chart-o"></i>兴趣管理</a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> 旅途管理</a>
+                        <a href="{{asset('/admin/tour/index')}}"><i class="fa fa-fw fa-edit"></i> 旅途管理</a>
                     </li>
                     <li>
                         <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> 时间轴</a>
