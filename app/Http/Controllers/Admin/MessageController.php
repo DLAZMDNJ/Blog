@@ -22,7 +22,9 @@ class MessageController extends Controller
     }
     public function doAdd(Request $request)
     {
-		    	$a = $request->except('_token');
-		    	var_dump($a);
+		    	$data = $request->except('_token');
+		    	DB::table('blog_interest')->insert(['name'=>$data['name'],'pic'=>$data['pic'],'dic'=>$data['dic']]);
+		    	$inter = DB::table('blog_interest')->get();
+		    	return view('admin.message.index',['data' => $inter]);
     }
 }

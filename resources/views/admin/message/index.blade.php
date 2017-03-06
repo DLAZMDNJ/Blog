@@ -25,7 +25,7 @@
                                     	<tr>
                                         <td>{{$v->id}}</td>
                                         <td>{{$v->name}}</td>
-                                        <td>{{$v->pic}}</td>
+                                        <td><img src="{{$v->pic}}" width="50px;"></td>
                                         <td>{{$v->dic}}</td>
                                         <td>
                                         <a href="">
