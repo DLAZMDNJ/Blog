@@ -30,7 +30,7 @@
                                         <td>{{$v->name}}</td>
                                         <td>{{$v->nickname}}</td>
                                         <td><img src="" width="50px;"></td>
-                                        <td>{{$v->utime}}</td>
+                                        <td>{{$v->time}}</td>
                                         <td>
                                         @if($v->status == 0)
                                         正常
