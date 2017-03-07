@@ -17,6 +17,12 @@ Route::get('/', 'Home\HomeController@index');
 Route::group(['middleware' => 'admin.login'],function(){
 	
 	Route::get('/root', 'Admin\AdminController@index');
+	Route::get('/admin/user/index', 'Admin\UserController@index');
+	Route::get('/admin/user/add', 'Admin\UserController@add');
+	Route::post('/admin/user/doAdd', 'Admin\UserController@doAdd');
+	Route::get('/admin/user/edit/{id}','Admin\UserController@edit');
+	Route::post('/admin/user/doEdit','Admin\UserController@doEdit');
+	Route::get('/admin/user/delete/{id}','Admin\UserController@delete');
 	Route::get('/admin/message/index', 'Admin\MessageController@index');
 	Route::get('/admin/message/add','Admin\MessageController@add');
 	Route::post('/admin/message/doAdd','Admin\MessageController@doAdd');
