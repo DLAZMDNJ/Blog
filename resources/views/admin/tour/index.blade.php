@@ -7,7 +7,7 @@
 	
 				<div class="row">
                     <div class="col-lg-12">
-                        <h2>兴趣管理</h2> 
+                        <h2>旅游管理</h2> 
                        <h4><a href="/admin/tour/add">新增</a></h4>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover">
