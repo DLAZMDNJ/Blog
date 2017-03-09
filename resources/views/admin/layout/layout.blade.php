@@ -163,31 +163,17 @@
                         <a href="{{asset('/admin/time/index')}}"><i class="fa fa-fw fa-desktop"></i> 时间轴</a>
                     </li>
                     <li>
-                        <a href="{{asset('/admin/friends/index')}}"><i class="fa fa-fw fa-wrench"></i> 朋友管理	</a>
+                        <a href="{{asset('/admin/friends/index')}}"><i class="fa fa-fw fa-wrench"></i> 朋友管理</a>
                     </li>
                      <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i>网站配置</a>
+                        <a href="{{asset('/admin/webConfig/index')}}"><i class="fa fa-fw fa-wrench"></i>网站配置</a>
                     </li>
                      <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i>数据字典</a>
+                        <a href="{{asset('/admin/dict/index')}}"><i class="fa fa-fw fa-wrench"></i>数据字典</a>
                     </li>
                     <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i>操作日志</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
+                        <a href="{{asset('admin/log/index')}}"><i class="fa fa-fw fa-wrench"></i>操作日志</a>
+                    </li>                                
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

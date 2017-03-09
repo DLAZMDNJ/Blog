@@ -50,7 +50,7 @@
                                         修改</a>
                                         ----|----
                                         <a href="/admin/user/delete/{{$v->id}}">
-                                        删除</a>                                    
+                                        删除</a>     </td>                               
                                           </tr>	
                                         @endforeach
                                   

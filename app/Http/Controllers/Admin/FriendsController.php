@@ -21,7 +21,7 @@ class FriendsController extends Controller
 	public function doAdd(Request $request)
 	{
 		$friends = $request->except('_token');
-		DB::table('blog_friends')->insert(['name'=>$friends['name'],'pic'=>$friends['pic'],'dic'=>$friends['dic']]);
+		DB::table('blog_friends')->insert($friends);
 		$friends = DB::table('blog_friends')->get();
 		return view('admin.friends.index',['friends' => $friends]);
 	}
@@ -33,7 +33,7 @@ class FriendsController extends Controller
 	public function doEdit(Request $request)
 	{
 		$friends = $request->except('_token');
-		DB::table('blog_friends')->where('id',$friends['id'])->update(['name'=>$friends['name'],'pic'=>$friends['pic'],'dic'=>$friends['dic']]);
+		DB::table('blog_friends')->where('id',$friends['id'])->update(['name'=>$friends['name'],'sex'=>$friends['sex'],'pic'=>$friends['pic'],'dis'=>$friends['dis'],'qq'=>$friends['qq'],'wechar'=>$friends['wechar'],'email'=>$friends['email']]);
 		$friends = DB::table('blog_friends')->get();
 		return view('admin.friends.index',['friends' => $friends]);
 	}

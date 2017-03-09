@@ -52,6 +52,11 @@ Route::group(['middleware' => 'admin.login'],function(){
 	Route::get('/admin/friends/edit/{id}','Admin\FriendsController@edit');
 	Route::post('/admin/friends/doEdit','Admin\FriendsController@doEdit');
 	Route::get('/admin/friends/delete/{id}','Admin\FriendsController@delete');
+	//网站配置
+	Route::get('/admin/webConfig/index', 'Admin\WebConfigController@index');
+	//数据字典
+	Route::get('/admin/dict/index', 'Admin\DictController@index');
+	
 	
 	
 });
