@@ -172,7 +172,7 @@
                         <a href="{{asset('/admin/dict/index')}}"><i class="fa fa-fw fa-wrench"></i>数据字典</a>
                     </li>
                     <li>
-                        <a href="{{asset('admin/log/index')}}"><i class="fa fa-fw fa-wrench"></i>操作日志</a>
+                        <a href="{{asset('/admin/log/index')}}"><i class="fa fa-fw fa-wrench"></i>操作日志</a>
                     </li>                                
                 </ul>
             </div>

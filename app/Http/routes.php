@@ -56,7 +56,8 @@ Route::group(['middleware' => 'admin.login'],function(){
 	Route::get('/admin/webConfig/index', 'Admin\WebConfigController@index');
 	//数据字典
 	Route::get('/admin/dict/index', 'Admin\DictController@index');
-	
+	//操作日志
+	Route::get('/admin/log/index', 'Admin\LogController@index');
 	
 	
 });
