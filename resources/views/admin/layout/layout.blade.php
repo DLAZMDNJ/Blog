@@ -160,10 +160,10 @@
                         <a href="{{asset('/admin/tour/index')}}"><i class="fa fa-fw fa-edit"></i> 旅途管理</a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> 时间轴</a>
+                        <a href="{{asset('/admin/time/index')}}"><i class="fa fa-fw fa-desktop"></i> 时间轴</a>
                     </li>
                     <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> 朋友管理	</a>
+                        <a href="{{asset('/admin/friends/index')}}"><i class="fa fa-fw fa-wrench"></i> 朋友管理	</a>
                     </li>
                      <li>
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i>网站配置</a>

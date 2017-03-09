@@ -15,27 +15,43 @@ Route::get('/', 'Home\HomeController@index');
 
 //中间键控制到登录页面
 Route::group(['middleware' => 'admin.login'],function(){
-	
+	//后台首页
 	Route::get('/root', 'Admin\AdminController@index');
+	//用户管理
 	Route::get('/admin/user/index', 'Admin\UserController@index');
 	Route::get('/admin/user/add', 'Admin\UserController@add');
 	Route::post('/admin/user/doAdd', 'Admin\UserController@doAdd');
 	Route::get('/admin/user/edit/{id}','Admin\UserController@edit');
 	Route::post('/admin/user/doEdit','Admin\UserController@doEdit');
 	Route::get('/admin/user/delete/{id}','Admin\UserController@delete');
+	//兴趣管理
 	Route::get('/admin/message/index', 'Admin\MessageController@index');
 	Route::get('/admin/message/add','Admin\MessageController@add');
 	Route::post('/admin/message/doAdd','Admin\MessageController@doAdd');
 	Route::get('/admin/message/edit/{id}','Admin\MessageController@edit');
 	Route::post('/admin/message/doEdit','Admin\MessageController@doEdit');
 	Route::get('/admin/message/delete/{id}','Admin\MessageController@delete');
+	//旅游管理
 	Route::get('/admin/tour/index', 'Admin\TourController@index');
 	Route::get('/admin/tour/add','Admin\TourController@add');
 	Route::post('/admin/tour/doAdd','Admin\TourController@doAdd');
 	Route::get('/admin/tour/edit/{id}','Admin\TourController@edit');
 	Route::post('/admin/tour/doEdit','Admin\TourController@doEdit');
 	Route::get('/admin/tour/delete/{id}','Admin\TourController@delete');
-	
+	//时间轴管理
+	Route::get('/admin/time/index', 'Admin\TimeController@index');
+	Route::get('/admin/time/add','Admin\TimeController@add');
+	Route::post('/admin/time/doAdd','Admin\TimeController@doAdd');
+	Route::get('/admin/time/edit/{id}','Admin\TimeController@edit');
+	Route::post('/admin/time/doEdit','Admin\TimeController@doEdit');
+	Route::get('/admin/time/delete/{id}','Admin\TimeController@delete');
+	//朋友管理
+	Route::get('/admin/friends/index', 'Admin\FriendsController@index');
+	Route::get('/admin/friends/add','Admin\FriendsController@add');
+	Route::post('/admin/friends/doAdd','Admin\FriendsController@doAdd');
+	Route::get('/admin/friends/edit/{id}','Admin\FriendsController@edit');
+	Route::post('/admin/friends/doEdit','Admin\FriendsController@doEdit');
+	Route::get('/admin/friends/delete/{id}','Admin\FriendsController@delete');
 	
 	
 });
