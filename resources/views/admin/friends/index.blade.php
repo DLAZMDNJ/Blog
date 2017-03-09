@@ -7,7 +7,7 @@
 	
 				<div class="row">
                     <div class="col-lg-12">
-                        <h2>兴趣管理</h2> 
+                        <h2>朋友管理</h2> 
                        <h4><a href="/admin/friends/add">新增</a></h4>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover">
@@ -36,7 +36,9 @@
 										女
 										@endif
 										</td>
-                                        <td><img src="{{$v->pic}}" width="50px;"></td>
+                                        <td>
+                                        <img src="{{asset("/home/index/img/team/$v->pic")}}" width="50px;">                                  
+                                        </td>
                                         <td>{{$v->dis}}</td>
                                         <td>{{$v->qq}}</td>
                                         <td>{{$v->wechar}}</td>
