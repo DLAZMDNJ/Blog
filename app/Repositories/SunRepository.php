@@ -8,6 +8,10 @@ use DB;
 class SunRepository extends BaseRepository
 {
 	protected $model;
+	public function __construct()
+	{
+		parent::__construct();
+	}
 	public function index($data, $extra='')
 	{
 		
@@ -16,19 +20,19 @@ class SunRepository extends BaseRepository
 	{
 		
 	}
-	public function doAdd($data,$extra)
+	public function doAdd($data,$extra='')
 	{
 		
 	}
-	public function edit($id,$extra)
+	public function edit($id,$extra='')
 	{
 		
 	}
-	public function doEdit($data,$extra)
+	public function doEdit($data,$extra='')
 	{
 		
 	}
-	public function delete($id,$extra)
+	public function delete($id,$extra='')
 	{
 		
 	}
