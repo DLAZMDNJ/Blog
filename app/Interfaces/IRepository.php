@@ -20,28 +20,10 @@ interface IRepository
 	 * @param  string $size 分页大小（存在默认值）
 	 * @return Illuminate\Support\Collection
 	 */
-	public function index($data)
-	{
-		
-	}
-	public function add()
-	{
-		
-	}
-	public function doAdd($data,$extra)
-	{
-		
-	}
-	public function edit($id,$extra)
-	{
-		
-	}
-	public function doEdit($data,$extra)
-	{
-		
-	}
-	public function delete($id,$extra)
-	{
-		
-	}
+	public function index($data,$extra);
+	public function add();
+	public function doAdd($data,$extra);
+	public function edit($id,$extra);
+	public function doEdit($data,$extra);
+	public function delete($id,$extra);
 }
