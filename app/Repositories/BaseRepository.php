@@ -1,7 +1,7 @@
 <?php 
 namespace App\Repositories;
 
-use APP\Interfaces\IRepository;
+use App\Interfaces\IRepository;
 
 abstract class BaseRepository implements IRepository
 {
