@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use DB;
 use App\Repositories\FriendsRepository;
-class FriendsController extends BackController
+class FriendsController extends Controller
 {	
 	public function __construct(FriendsController $firends)
 	{
