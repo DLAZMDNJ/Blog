@@ -9,18 +9,18 @@ use Faker\Provider\Base;
 
 class SunController extends BaseController
 {	
-	protected $repo;
+	protected $friends;
 	protected $mn;
 	public function __construct()
 	{
 		
 		
 	}
-	protected function repo(){
-		return $this->repo;
+	protected function friends(){
+		return $this->friends;
 	}
 	//模块名
 	protected function mn(){
-		return $this->repo()->mn();
+		return $this->friends()->mn();
 	}
 }
