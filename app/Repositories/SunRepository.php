@@ -12,4 +12,24 @@ class SunRepository extends BaseRepository
 	{
 		
 	}
+	public function add()
+	{
+		
+	}
+	public function doAdd($data,$extra)
+	{
+		
+	}
+	public function edit($id,$extra)
+	{
+		
+	}
+	public function doEdit($data,$extra)
+	{
+		
+	}
+	public function delete($id,$extra)
+	{
+		
+	}
 }
