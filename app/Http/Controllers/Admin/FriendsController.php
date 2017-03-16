@@ -7,8 +7,14 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use DB;
-class FriendsController extends Controller
-{
+use App\Repositories\FriendsRepository;
+class FriendsController extends BackController
+{	
+	public function __construct(FriendsController $firends)
+	{
+		parent::__construct();
+		$this->friends = $friends;
+	}
 	public function index()
 	{
 		$friends = DB::table('blog_friends')->get();
