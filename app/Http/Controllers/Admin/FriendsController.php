@@ -8,9 +8,9 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use DB;
 use App\Repositories\FriendsRepository;
-class FriendsController extends Controller
+class FriendsController extends BackController
 {	
-	public function __construct(FriendsController $firends)
+	public function __construct(FriendsRepository $firends)
 	{
 		parent::__construct();
 		$this->friends = $friends;
