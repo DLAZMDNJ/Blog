@@ -15,7 +15,7 @@ use DB;
  *
  * @author king <king@jinsec.com>
  */
-class User extends Mis implements AuthenticatableContract, CanResetPasswordContract
+class User extends sun implements AuthenticatableContract, CanResetPasswordContract
 {
 
 	use Authenticatable, CanResetPassword;
