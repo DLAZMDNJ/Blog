@@ -15,12 +15,12 @@ use DB;
  *
  * @author king <king@jinsec.com>
  */
-class User extends sun implements AuthenticatableContract, CanResetPasswordContract
+class friends extends sun implements AuthenticatableContract, CanResetPasswordContract
 {
 
 	
 	protected $table = 'blog_friends';
 	public function mn(){
-		return 'user';
+		return 'friends';
 	}
 }
