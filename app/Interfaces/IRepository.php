@@ -20,7 +20,7 @@ interface IRepository
 	 * @param  string $size 分页大小（存在默认值）
 	 * @return Illuminate\Support\Collection
 	 */
-	public function index($data,$extra)
+	public function index($data)
 	{
 		
 	}
