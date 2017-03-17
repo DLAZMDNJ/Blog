@@ -16,6 +16,8 @@ class friends extends sun
 
 	
 	protected $table = 'blog_friends';
+	public $timestamps = false;
+	protected $primaryKey = 'id';
 	public function mn()
 	{
 		return 'friends';

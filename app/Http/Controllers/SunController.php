@@ -24,4 +24,14 @@ class SunController extends BaseController
 	{
 		return $this->friends()->mn();
 	}
+	protected function sun(){
+		return 'admin';
+	}
+	public function index(Request $req)
+	{
+		$list = $this->friends()->index($req);
+		$idata['list'] = $list;
+		$idata['mn'] = $this->mn();
+		return view($this->mis().'.'.$this->mn().'.index', $idata);
+	}
 }
