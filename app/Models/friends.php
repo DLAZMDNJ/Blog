@@ -2,11 +2,7 @@
 
 namespace App\Models;
 
-use Illuminate\Auth\Authenticatable;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Auth\Passwords\CanResetPassword;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
-use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+
 
 use DB;
 
@@ -15,12 +11,13 @@ use DB;
  *
  * @author king <king@jinsec.com>
  */
-class friends extends sun implements AuthenticatableContract, CanResetPasswordContract
+class friends extends sun 
 {
 
 	
 	protected $table = 'blog_friends';
-	public function mn(){
+	public function mn()
+	{
 		return 'friends';
 	}
 }
