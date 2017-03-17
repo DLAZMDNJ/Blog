@@ -20,7 +20,8 @@ class SunController extends BaseController
 		return $this->friends;
 	}
 	//模块名
-	protected function mn(){
+	protected function mn()
+	{
 		return $this->friends()->mn();
 	}
 }

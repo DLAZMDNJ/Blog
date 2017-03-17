@@ -10,7 +10,7 @@ use DB;
 use App\Repositories\FriendsRepository;
 class FriendsController extends BackController
 {	
-	public function __construct(FriendsRepository $firends)
+	public function __construct(FriendsRepository $friends)
 	{
 		parent::__construct();
 		$this->friends = $friends;
