@@ -7,6 +7,7 @@ class FriendsRepository extends SunRepository
 {
 	public function __construct(friends $friends)
 	{
-		
+		$this->model = $friends;
+		$this->user = $friends;
 	}
 }

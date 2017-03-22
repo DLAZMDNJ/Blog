@@ -18,9 +18,9 @@ class FriendsController extends BackController
 	public function index(Request $request)
 	{	
 		$friends = parent::index($request);
-		return $friends;
+// 		return $friends;
 // 		$friends = DB::table('blog_friends')->get();
-// 		return view('admin.friends.index',['friends' => $friends]);
+		return view('admin.friends.index',['friends' => $friends]);
 	}
 	public function add()
 	{
