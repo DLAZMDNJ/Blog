@@ -13,7 +13,7 @@
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                             <div class="form-group">
-                                <label>时间</label>
+                                <label>时间 </label>
                                 <input class="form-control" name="time">
                                 <p class="help-block">5-10个汉字.</p>
                             </div>
