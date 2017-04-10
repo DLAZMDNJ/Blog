@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'Home\HomeController@index');
-
+Route::get('/qianmin', 'Hotel\Home\HomeController@index');
 //中间键控制到登录页面
 Route::group(['middleware' => 'admin.login'],function(){
 	//后台首页
