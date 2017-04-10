@@ -12,7 +12,6 @@
 */
 
 Route::get('/', 'Home\HomeController@index');
-Route::get('/qianmin', 'Hotel\Home\HomeController@index');
 //中间键控制到登录页面
 Route::group(['middleware' => 'admin.login'],function(){
 	//后台首页
@@ -63,3 +62,24 @@ Route::group(['middleware' => 'admin.login'],function(){
 });
 Route::get('/login','Admin\LoginController@index');
 Route::post('/doLogin','Admin\LoginController@doLogin');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//钱敏
+
+Route::get('/qm', 'Hotel\Home\HomeController@index');
+Route::get('/qm/admin','Hotel\Admin\AdminController@index');
+Route::get('/qm/woker/index','Hotel\Admin\WokerController@index');
+Route::get('/qm/woker/add','Hotel\Admin\WokerController@add');
+Route::post('/qm/woker/doAdd','Hotel\Admin\WokerController@doAdd');
