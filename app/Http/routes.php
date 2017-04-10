@@ -79,6 +79,7 @@ Route::post('/doLogin','Admin\LoginController@doLogin');
 //钱敏
 
 Route::get('/qm', 'Hotel\Home\HomeController@index');
+Route::get('/qm/admin', 'Hotel\Admin\AdminController@index');
 Route::get('/qm/hotel', 'Hotel\Home\HotelController@index');
 Route::get('/qm/services', 'Hotel\Home\ServicesController@index');
 Route::get('/qm/reply', 'Hotel\Home\ReplyController@index');
