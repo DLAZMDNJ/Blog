@@ -79,7 +79,10 @@ Route::post('/doLogin','Admin\LoginController@doLogin');
 //钱敏
 
 Route::get('/qm', 'Hotel\Home\HomeController@index');
-Route::get('/qm/admin','Hotel\Admin\AdminController@index');
+Route::get('/qm/hotel', 'Hotel\Home\HotelController@index');
+Route::get('/qm/services', 'Hotel\Home\ServicesController@index');
+Route::get('/qm/reply', 'Hotel\Home\ReplyController@index');
+Route::get('/qm/contact','Hotel\Home\ContactController@index');
 Route::get('/qm/woker/index','Hotel\Admin\WokerController@index');
 Route::get('/qm/woker/add','Hotel\Admin\WokerController@add');
 Route::post('/qm/woker/doAdd','Hotel\Admin\WokerController@doAdd');
