@@ -20,18 +20,19 @@
                                         <th>职位</th>
                                         <th>入职时间</th>                                
                                         <th>状态</th>
-                                        <th>权限</th>
+                                        <th>部门</th>
                                         <th>操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>                              
-                                    	@foreach($data as $v)
+                                    	@foreach($list as $v)
                                     	<tr>
-                                        <td>{{$v->id}}</td>
-                                        <td>{{$v->name}}</td>
-                                        <td>{{$v->nickname}}</td>
+                                        <td>{{$v->number}}</td>
+                                        <td>{{$v->realname}}</td>
+                                        <td>{{$v->sex}}</td>
                                         <td><img src="" width="50px;"></td>
-                                        <td>{{$v->time}}</td>
+                                        <td>{{$v->zhiwei}}</td>
+                                        <td>{{$v->time_in}}</td>
                                         <td>
                                         @if($v->status == 0)
                                         正常
@@ -41,19 +42,41 @@
                                         
                                         </td>
                                         <td>
-                                        @if($v->auth == 0)
-                                        管理员
-                                        @else
-                                        普通用户
+                                        @if($v->auth == 1)
+                                        高管部门
+                                        @endif
+                                        @if($v->auth == 2)
+                                        接待部门
+                                         @endif
+                                        @if($v->auth == 3)
+                                        保洁部门
+                                         @endif
+                                        @if($v->auth == 4)
+                                        保安部门
+                                         @endif
+                                        @if($v->auth == 5)
+                                       	财务部门
+                                       	 @endif
+                                        @if($v->auth == 6)
+                                        餐饮部门
+                                         @endif
+                                        @if($v->auth == 7)
+                                        司机部门
+                                        @endif
+                                        @if($v->auth == 8)
+                                        综合服务部门
+                                        @endif
+                                        @if($v->auth == 9)
+                                        维修部门
                                         @endif</td>
                                         <td>
-                                        <a href="/admin/user/edit/{{$v->id}}">
+                                        <a href="/qm/woker/edit/{{$v->id}}">
                                         修改</a>
                                         ----|----
-                                        <a href="/admin/user/edit/{{$v->id}}">
+                                        <a href="/qm/woker/show/{{$v->id}}">
                                         详细信息</a>
                                         ----|----
-                                        <a href="/admin/user/delete/{{$v->id}}">
+                                        <a href="/qm/woker/delete/{{$v->id}}">
                                         删除</a>     </td>                               
                                           </tr>	
                                         @endforeach

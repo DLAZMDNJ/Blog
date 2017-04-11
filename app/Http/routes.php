@@ -87,3 +87,4 @@ Route::get('/qm/contact','Hotel\Home\ContactController@index');
 Route::get('/qm/woker/index','Hotel\Admin\WokerController@index');
 Route::get('/qm/woker/add','Hotel\Admin\WokerController@add');
 Route::post('/qm/woker/doAdd','Hotel\Admin\WokerController@doAdd');
+Route::get('/qm/woker/edit/{id}','Hotel\Admin\WokerController@edit');
