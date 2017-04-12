@@ -80,7 +80,7 @@ class WokerController extends Controller
     	$userinfo = DB::table('qm_woker')->where('id',$data['id'])->first();
     	$auth = $userinfo->auth;
     	if($auth == $data['auth'])
-    	{
+    	{	
     		$number = $auth->number;
     	}else{
     		$count = DB::table('qm_woker')->where('auth',$data['auth'])->count();

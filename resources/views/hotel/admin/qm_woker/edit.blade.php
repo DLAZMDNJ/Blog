@@ -42,9 +42,7 @@
 							<div class="form-group">
                                 <label>教育程度</label>
                                 <select class="form-control" name="education">
-                                	<option @if(!$info->education) 
-                                			selected 
-                                			@endif>请选择</option>
+     
                                     <option value="1" @if($info->education == 1) 
                                     		selected 
                                    			 @endif>初中及以下</option>
