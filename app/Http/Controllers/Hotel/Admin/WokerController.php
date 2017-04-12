@@ -78,11 +78,15 @@ class WokerController extends Controller
     		$pic = $data['ifpic'];
     	}
     	$userinfo = DB::table('qm_woker')->where('id',$data['id'])->first();
-    	$auth = $userinfo->auth;
+    	$auth = $userinfo -> auth;
+    	$number = $userinfo->number;
+ 
+    	
     	if($auth == $data['auth'])
-    	{	
-    		$number = $auth->number;
-    	}else{
+    	{
+    		$number = $number;
+    	}else
+    	{
     		$count = DB::table('qm_woker')->where('auth',$data['auth'])->count();
     		$number = $data['auth'] * 1000 + $count + 1;
     	}
