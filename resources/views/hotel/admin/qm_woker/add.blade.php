@@ -7,7 +7,7 @@
 	
 			<div class="row">
                     <div class="col-lg-3">
-                        <form role="form" method="post" action="{{asset("/qm/woker/doAdd")}}">
+                        <form role="form" method="post" action="{{asset("/qm/woker/doAdd")}}" enctype="multipart/form-data">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                             

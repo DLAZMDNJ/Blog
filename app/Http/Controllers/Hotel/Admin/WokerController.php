@@ -25,6 +25,25 @@ class WokerController extends Controller
     	$password = md5($data['password']);
     	$count = DB::table('qm_woker')->count();
     	$number = $data['auth'] * 1000 + $count + 1;
+    	if($request -> hasFile('pic'))
+    	{
+    		if($request -> file('pic') -> isValid())
+    		{
+    			//处理头像
+    			// getClientOriginalExtension()    extension()
+    			$extension = $request -> file('pic') -> getClientOriginalExtension();
+    			// echo $extension;
+    			$filename = mt_rand(1000000,9999999).'.'.$extension;
+    			$dir = './uploads/avatar/';
+    	
+    			$request -> file('pic') -> move($dir,$filename);//storeAs
+    			$data['pic'] = '/uploads/avatar/'.$filename;
+    		}
+    	}else
+    	{
+    		$data['pic'] = '/uploads/avatar/default.jpg';
+    	}
+    	 
     	$res = DB::table('qm_woker')->insert(['name'=>$data['name'],'pic'=>$data['pic'],'realname'=>$data['realname'],'number'=>$number,'password'=>$password,'time_in'=>
     			$data['time_in'],'sex'=>$data['sex'],'status'=>$data['status'],'auth'=>$data['auth'],'zhiwei'=>$data['zhiwei']
     	]);

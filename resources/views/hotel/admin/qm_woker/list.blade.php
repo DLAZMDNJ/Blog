@@ -29,8 +29,12 @@
                                     	<tr>
                                         <td>{{$v->number}}</td>
                                         <td>{{$v->realname}}</td>
-                                        <td>{{$v->sex}}</td>
-                                        <td><img src="" width="50px;"></td>
+                                        <td>@if($v->sex == 1)
+                                        男
+                                        @else
+                                        女
+                                        @endif</td>
+                                        <td><img src="{{$v->pic}}" width="100px;"></td>
                                         <td>{{$v->zhiwei}}</td>
                                         <td>{{$v->time_in}}</td>
                                         <td>

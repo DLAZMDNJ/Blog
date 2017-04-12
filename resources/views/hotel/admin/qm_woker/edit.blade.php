@@ -38,8 +38,8 @@
                             <div class="form-group">
                                 <label>用户头像</label>
                                 <input type="file" name="pic" >
-                            </div>
-							<img src="{{$info->name}}" width="100px;">
+                           </div>
+							<img src="{{$info->pic}}" width="100px;"> 
 <!--                             <div class="form-group"> -->
 <!--                                 <label>兴趣描述</label> -->
 <!--                                 <textarea class="form-control" rows="3" name="dic"></textarea> -->
