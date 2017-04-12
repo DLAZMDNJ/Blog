@@ -137,7 +137,7 @@
                         <a href="{{asset('/qm/woker/index')}}"><i class="fa fa-fw fa-bar-chart-o"></i>酒店内部人员管理</a>
                     </li>
                     <li>
-                        <a href="{{asset('/admin/message/index')}}"><i class="fa fa-fw fa-bar-chart-o"></i>酒店会员管理</a>
+                        <a href="{{asset('/qm/user/index')}}"><i class="fa fa-fw fa-bar-chart-o"></i>酒店会员管理</a>
                     </li>
                     <li>
                         <a href="{{asset('/admin/tour/index')}}"><i class="fa fa-fw fa-edit"></i>房间类型管理</a>

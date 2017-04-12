@@ -88,3 +88,7 @@ Route::get('/qm/woker/index','Hotel\Admin\WokerController@index');
 Route::get('/qm/woker/add','Hotel\Admin\WokerController@add');
 Route::post('/qm/woker/doAdd','Hotel\Admin\WokerController@doAdd');
 Route::get('/qm/woker/edit/{id}','Hotel\Admin\WokerController@edit');
+Route::post('/qm/woker/doEdit','Hotel\Admin\WokerController@doEdit');
+Route::get('/qm/woker/show/{id}','Hotel\Admin\WokerController@show');
+Route::get('/qm/woker/delete/{id}','Hotel\Admin\WokerController@delete');
+Route::get('/qm/user/index','Hotel\Admin\UserController@index');
