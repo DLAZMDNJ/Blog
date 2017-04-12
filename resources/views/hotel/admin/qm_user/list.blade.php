@@ -1,4 +1,4 @@
-@extends('admin.layout.layout')
+@extends('hotel.admin.layout.layout')
 
 @section('content')
 		 <div id="page-wrapper">
