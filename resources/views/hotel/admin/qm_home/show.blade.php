@@ -17,10 +17,12 @@
 							<div class="form-group">					
                                 <label>房间类型</label>
                                  <p class="form-control"> 
-                                 @if($info->cid == 1) 大床房 @endif
-                                 @if($info->cid == 2) 标准间 @endif
-                                 @if($info->cid == 3) 商务房 @endif
-                                 @if($info->cid == 4) 套房 @endif
+                                 @foreach($cate as $v)
+                                 	@if($v->id == $info->cid)
+                                 		{{$v->name}}
+                                 	@endif
+                                 @endforeach
+                   
                                  </p> 
                             </div> 
                             <div class="form-group">

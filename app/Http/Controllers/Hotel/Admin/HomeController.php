@@ -115,8 +115,9 @@ class HomeController extends Controller
     	return view('hotel.admin.qm_home.index',['list'=>$list,'cate'=>$category]);
     }
     public function show($id)
-    {
+    {	
+    	$category = DB::table('qm_category')->get();
     	$info = DB::table('qm_home')->where('id',$id)->first();
-    	return view('hotel.admin.qm_home.show',['info'=>$info]);
+    	return view('hotel.admin.qm_home.show',['info'=>$info,'cate'=>$category]);
     }
 }
