@@ -42,7 +42,7 @@ class HomeController extends Controller
     	}
     	$res = DB::table('qm_home')->insert(['name'=>$data['name'],'cid'=>$data['cid'],'is_food'=>$data['is_food'],'is_onsale'=>$data['is_onsale'],
     			'is_clean'=>$data['is_clean'],'is_window'=>$data['is_window'],'price'=>$data['price'],'count'=>$data['count'],'floor'=>$data['floor'],
-    			'pic_min'=>$pic,'description'=>$data['description'],'number'=>$number
+    			'pic'=>$pic,'description'=>$data['description'],'number'=>$number
     	]);
     	if($res)
     	{
