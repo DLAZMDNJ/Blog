@@ -14,31 +14,55 @@
                                 <thead>
                                     <tr>
                                         <th>编号</th>
+                                        <th>所在楼层</th>
                                         <th>房间类型</th>
+                                        <th>房间名称</th>
                                         <th>房间剩余</th>                               
                                         <th>预定价格</th>
                                         <th>是否已下架</th>
                                         <td>是否已保洁</td>
                                         <td>是否有早餐</td>
+                                        <td>是否有窗户</td>
                                         <td>操作者</td>
                                         <th>操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>                              
                                     	<tr>
-                                    	<td></td>
-                                    	<td></td>
-                                    	<td></td>
-                                    	<td></td>
-                                    	<td></td>
-                                    	<td></td>
-                                    	<td></td>
-                                    	<td></td>                               
+                                    	@foreach($list as $v)
+                                    	<td>{{$v->number}}</td>
+                                    	<td>{{$v->floor}}</td>
                                     	<td>
-                                    		<a href="/qm/user/edit/">修改</a>----|----<a href="/qm/user/delete/">删除</a>----|----<a href="/qm/user/show/">详细信息</a>     
+                                    	@foreach($cate as $m)
+                                    		@if($m->name == $v->cid)
+                                    			@if($m->name == 1)
+                                    			大床房
+                                    			@endif
+                                    			@if($m->name == 2)
+                                    			标准间
+                                    			@endif
+                                    			@if($m->name == 3)
+                                    			商务房
+                                    			@endif
+                                    			@if($m->name == 4)
+                                    			套房
+                                    			@endif
+                                    		@endif
+                                    	@endforeach	
+                                    	</td>
+                                    	<td>{{$v->name}}</td>
+                                    	<td>{{$v->count}}间</td>
+                                    	<td>{{$v->price}}元</td>
+                                    	<td>@if($v->is_onsale == 1) 是 @else 否 @endif </td>
+                                    	<td>@if($v->is_clean == 1) 是 @else 否 @endif </td>
+                                    	<td>@if($v->is_food == 1) 是 @else 否 @endif</td>
+                                    	<td>@if($v->is_window == 1) 是 @else 否 @endif</td>
+                                    	<td>{{$v->uid}}</td>                               
+                                    	<td>
+                                    		<a href="/qm/home/edit/{{$v->id}}">修改</a>----|----<a href="/qm/home/delete/{{$v->id}}">删除</a>----|----<a href="/qm/home/show/{{$v->id}}">详细信息</a>     
                                         </td>                               
                                         </tr>	
-                                   
+                                   		@endforeach
                                   
 
                                 </tbody>

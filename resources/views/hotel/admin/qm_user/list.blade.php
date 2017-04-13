@@ -7,7 +7,7 @@
 	
 				<div class="row">
                     <div class="col-lg-12">
-                        <h2>用户管理</h2> 
+                        <h2>用户管理</h2> <span style="color:red;">会员为用户自己添加，后台禁止添加和修改</span>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover">
                                 <thead>
