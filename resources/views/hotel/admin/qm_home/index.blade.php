@@ -19,12 +19,14 @@
                                         <th>预定价格</th>
                                         <th>是否已下架</th>
                                         <td>是否已保洁</td>
+                                        <td>是否有早餐</td>
                                         <td>操作者</td>
                                         <th>操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>                              
                                     	<tr>
+                                    	<td></td>
                                     	<td></td>
                                     	<td></td>
                                     	<td></td>

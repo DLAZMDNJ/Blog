@@ -99,3 +99,8 @@ Route::get('/qm/user/delete/{id}','Hotel\Admin\UserController@delete');
 Route::get('/qm/user/show/{id}','Hotel\Admin\UserController@show');
 Route::get('/qm/category/index','Hotel\Admin\CategoryController@index');
 Route::get('/qm/home/index','Hotel\Admin\HomeController@index');
+Route::get('/qm/category/add','Hotel\Admin\CategoryController@add');
+Route::post('/qm/category/doAdd','Hotel\Admin\CategoryController@doAdd');
+Route::get('/qm/category/delete/{id}','Hotel\Admin\CategoryController@delete');
+Route::get('/qm/category/edit/{id}','Hotel\Admin\CategoryController@edit');
+Route::post('/qm/category/doEdit','Hotel\Admin\CategoryController@doEdit');
