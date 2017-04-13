@@ -12,12 +12,7 @@
 
                             <div class="form-group">
                                 <label>房间类型</label>
-                                <select class="form-control" name="name">
-                                    <option value="1">大床房</option>
-                                    <option value="2">标准间</option>
-                                    <option value="3">商务房</option>
-                                    <option value="4">套房</option>
-                                </select>
+                                <input type="text" name="name" class="form-control">
                             </div>
                              
                             <div class="form-group">

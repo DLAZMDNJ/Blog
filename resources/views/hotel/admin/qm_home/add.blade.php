@@ -16,10 +16,9 @@
 							<div class="form-group">					
                                 <label>房间类型</label>
                                 <select class="form-control" name="cid">
-                                    <option value="1">大床房</option>
-                                    <option value="2">标准间</option>
-                                    <option value="3">商务房</option>
-                                    <option value="4">套房</option>
+                                @foreach($cate as $v)
+                                    <option value="{{$v->id}}">{{$v->name}}</option>
+                                 @endforeach   
                                 </select>
                             </div> 
                             <div class="form-group">

@@ -34,19 +34,8 @@
                                     	<td>{{$v->floor}}</td>
                                     	<td>
                                     	@foreach($cate as $m)
-                                    		@if($m->name == $v->cid)
-                                    			@if($m->name == 1)
-                                    			大床房
-                                    			@endif
-                                    			@if($m->name == 2)
-                                    			标准间
-                                    			@endif
-                                    			@if($m->name == 3)
-                                    			商务房
-                                    			@endif
-                                    			@if($m->name == 4)
-                                    			套房
-                                    			@endif
+                                    		@if($m->id == $v->cid)
+                                    			{{$m->name}}
                                     		@endif
                                     	@endforeach	
                                     	</td>

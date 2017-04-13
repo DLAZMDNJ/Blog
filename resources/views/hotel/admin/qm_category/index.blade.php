@@ -23,7 +23,7 @@
                                 		@foreach($list as $v)                        
                                     	<tr>
                                     	<td>{{$v->id}}</td>
-                                    	<td>@if($v->name == 1) 大床房 @endif @if($v->name == 2) 标准间 @endif @if($v->name == 3) 商务房 @endif @if($v->name == 4) 套房 @endif</td>
+                                    	<td>{{$v->name}}</td>
                                     	<td><img src="{{$v->pic}}" width="100px;"></td>                                
                                     	<td>
                                     		<a href="/qm/category/edit/{{$v->id}}">修改</a>----|----<a href="/qm/category/delete/{{$v->id}}">删除</a>     

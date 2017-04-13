@@ -17,8 +17,9 @@ class HomeController extends Controller
     	return view('hotel.admin.qm_home.index',['list'=>$list,'cate'=>$category]);
     }
     public function add()
-    {
-    	return view('hotel.admin.qm_home.add');
+    {	
+    	$category = DB::table('qm_category')->get();
+    	return view('hotel.admin.qm_home.add',['cate'=>$category]);
     }
     public function doAdd(Request $request)
     {
