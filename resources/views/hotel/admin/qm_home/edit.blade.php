@@ -17,10 +17,10 @@
 							<div class="form-group">					
                                 <label>房间类型</label>
                                 <select class="form-control" name="cid">
-                                    <option value="1" @if($info->cid == 1) selected @endif>大床房</option>
-                                    <option value="2" @if($info->cid == 2) selected @endif>标准间</option>
-                                    <option value="3" @if($info->cid == 3) selected @endif>商务房</option>
-                                    <option value="4" @if($info->cid == 4) selected @endif>套房</option>
+                                	 @foreach($cate as $v)
+                                    	<option value="{{$v->id}}" @if($info->cid == $v->id)  selected @endif>{{$v->name}}</option>
+                                	 @endforeach  
+          
                                 </select>
                             </div> 
                             <div class="form-group">

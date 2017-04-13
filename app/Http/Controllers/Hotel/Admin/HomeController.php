@@ -53,9 +53,10 @@ class HomeController extends Controller
     	}
     }
     public function edit($id)
-    {
+    {	
+    	$category = DB::table('qm_category')->get();
     	$info = DB::table('qm_home')->where('id',$id)->first();
-    	return view('hotel.admin.qm_home.edit',['info'=>$info]);
+    	return view('hotel.admin.qm_home.edit',['info'=>$info,'cate'=>$category]);
     }
     public function doEdit(Request $request)
     {
