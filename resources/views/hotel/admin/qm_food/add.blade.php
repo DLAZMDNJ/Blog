@@ -10,7 +10,7 @@
                         <form role="form" method="post" action="{{asset("/qm/home/doAdd")}}" enctype="multipart/form-data">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                        <div class="form-group">
-                                <label>房间名称</label>
+                                <label>餐饮名称</label>
                                 <input class="form-control" name="name">
                             </div>
 							<div class="form-group">					
