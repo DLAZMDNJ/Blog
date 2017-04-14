@@ -51,7 +51,8 @@ class CategoryController extends Controller
     	return view('hotel.admin.qm_category.index',['list'=>$list]);
     }
     public function edit($id)
-    {
+    {	
+  
     	$info = DB::table('qm_category')->where('id',$id)->first();
     	return  view('hotel.admin.qm_category.edit',['info'=>$info]);
     }

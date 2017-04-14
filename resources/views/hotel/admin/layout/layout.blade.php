@@ -71,7 +71,10 @@
                         <a href="{{asset('/qm/home/index')}}"><i class="fa fa-fw fa-desktop"></i>房间管理</a>
                     </li>
                     <li>
-                        <a href="{{asset('/admin/friends/index')}}"><i class="fa fa-fw fa-wrench"></i>餐饮管理</a>
+                        <a href="{{asset('/qm/foodcategory/index')}}"><i class="fa fa-fw fa-edit"></i>餐饮类型管理</a>
+                    </li>
+                    <li>
+                        <a href="{{asset('/qm/food/index')}}"><i class="fa fa-fw fa-wrench"></i>餐饮管理</a>
                     </li>
                      <li>
                         <a href="{{asset('/admin/webConfig/index')}}"><i class="fa fa-fw fa-wrench"></i>服务管理</a>

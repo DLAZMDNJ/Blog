@@ -7,13 +7,12 @@
 	
 			<div class="row">
                     <div class="col-lg-3">
-                        <form role="form" method="post" action="{{asset("/qm/category/doEdit")}}" enctype="multipart/form-data">
+                        <form role="form" method="post" action="{{asset("/qm/foodcategory/doEdit")}}" enctype="multipart/form-data">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<input type="hidden" name="id" value="{{$info->id}}">
                             <div class="form-group">
-                                <label>房间类型</label>
+                                <label>餐饮种类</label>
                                  <input type="text" name="name" class="form-control" value="{{$info->name}}">
-                               
                             </div>
                              
                             <div class="form-group">
