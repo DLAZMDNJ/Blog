@@ -7,20 +7,13 @@
 	
 			<div class="row">
                     <div class="col-lg-3">
-                        <form role="form" method="post" action="{{asset("/qm/food/doAdd")}}" enctype="multipart/form-data">
+                        <form role="form" method="post" action="{{asset("/qm/server/doAdd")}}" enctype="multipart/form-data">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                        <div class="form-group">
-                                <label>餐饮名称</label>
+                                <label>服务名称</label>
                                 <input class="form-control" name="name">
                             </div>
-							<div class="form-group">					
-                                <label> 餐饮类型</label>
-                                <select class="form-control" name="cid">
-                                @foreach($cate as $v)
-                                    <option value="{{$v->id}}">{{$v->name}}</option>
-                                 @endforeach   
-                                </select>
-                            </div> 
+				
                              <div class="form-group">
                                 <label>适用人群</label>
                                 <input class="form-control" name="on_people" >
@@ -36,17 +29,10 @@
                                 <input class="form-control" name="price" >
                                 <p class="help-block">人民币.</p>
                             </div>
-                            <div class="form-group">
-                                <label>餐饮总量</label>
-                                <input class="form-control" name="count">
-                            </div>
-                            <div class="form-group">
-                                <label>包含内容</label>
-                                <input class="form-control" name="content">
-                            </div>                         							
+                                                  							
 
                             <div class="form-group">
-                                <label>缩略图</label>
+                                <label>配图</label>
                                 <input type="file" name="pic">
                             </div>
                             <div class="form-group">

@@ -7,51 +7,39 @@
 	
 			<div class="row">
                     <div class="col-lg-3">
-                        <form role="form" method="post" action="{{asset("/qm/food/doEdit")}}" enctype="multipart/form-data">
+                        <form role="form" method="post" action="{{asset("/qm/server/doEdit")}}" enctype="multipart/form-data">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                        <input type="hidden" name="id" value="{{$info->id}}">
                        <div class="form-group">
-                                <label>餐饮名称</label>
-                                <input class="form-control" name="name" value="{{$info->name}}" >
+                                <label>服务名称</label>
+                                <input class="form-control" name="name" value="{{$info->name}}">
                             </div>
-							<div class="form-group">					
-                                <label> 餐饮类型</label>
-                                <select class="form-control" name="cid">
-                                @foreach($cate as $v)
-                                    <option value="{{$v->id}}" @if($v->id == $info->cid ) selected @endif>{{$v->name}}</option>
-                                 @endforeach   
-                                </select>
-                            </div> 
+				
                              <div class="form-group">
                                 <label>适用人群</label>
-                                <input class="form-control" name="on_people"   value="{{$info->on_people}}">   
-                            </div> 
+                                <input class="form-control" name="on_people"  value="{{$info->on_people}}">
+                      
+                            </div>
                             <div class="form-group">
                                 <label>供给时间</label>
-                                <input class="form-control" name="time"   value="{{$info->time}}">   
+                                <input class="form-control" name="time"  value="{{$info->time}}">
+                      
                             </div>
                             <div class="form-group">
                                 <label>价格</label>
                                 <input class="form-control" name="price" value="{{$info->price}}">
                                 <p class="help-block">人民币.</p>
                             </div>
-                            <div class="form-group">
-                                <label>餐饮总量</label>
-                                <input class="form-control" name="count" value="{{$info->count}}">
-                            </div>
-                            <div class="form-group">
-                                <label>包含内容</label>
-                                <input class="form-control" name="content" value="{{$info->content}}">
-                            </div>                         							
+                                                  							
 
                             <div class="form-group">
-                                <label>缩略图</label>
+                                <label>配图</label>
                                 <input type="file" name="pic">
                             </div>
                             <div>
-                            <input type="hidden" value="{{$info->pic}}" name="ifpic">
-                            	<img src="{{$info->pic}}" width="100px;">
+                            <img src="{{$info->pic}}" width="100px;">
                             </div>
+                            <input type="hidden" name="ifpic" value="{{$info->pic}}">
                             <div class="form-group">
                                 <label>是否已下架</label>
                                 <select class="form-control" name="is_onsale">
