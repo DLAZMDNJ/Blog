@@ -77,19 +77,19 @@
                         <a href="{{asset('/qm/food/index')}}"><i class="fa fa-fw fa-wrench"></i>餐饮管理</a>
                     </li>
                      <li>
-                        <a href="{{asset('/admin/webConfig/index')}}"><i class="fa fa-fw fa-wrench"></i>服务管理</a>
+                        <a href="{{asset('/qm/server/index')}}"><i class="fa fa-fw fa-wrench"></i>服务管理</a>
                     </li>
                      <li>
-                        <a href="{{asset('/admin/dict/index')}}"><i class="fa fa-fw fa-wrench"></i>订单管理</a>
+                        <a href="{{asset('/qm/order/index')}}"><i class="fa fa-fw fa-wrench"></i>订单管理</a>
                     </li>
                     <li>
-                        <a href="{{asset('/admin/log/index')}}"><i class="fa fa-fw fa-wrench"></i>退房管理</a>
+                        <a href="{{asset('/qm/close/index')}}"><i class="fa fa-fw fa-wrench"></i>退房管理</a>
                     </li>
                     <li>
-                        <a href="{{asset('/admin/log/index')}}"><i class="fa fa-fw fa-wrench"></i>保洁管理</a>
+                        <a href="{{asset('/qm/clean/index')}}"><i class="fa fa-fw fa-wrench"></i>保洁管理</a>
                     </li>
                     <li>
-                        <a href="{{asset('/admin/log/index')}}"><i class="fa fa-fw fa-wrench"></i>网址配置管理</a>
+                        <a href="{{asset('/qm/configure/index')}}"><i class="fa fa-fw fa-wrench"></i>网址配置管理</a>
                     </li>                                
                 </ul>
             </div>

@@ -63,21 +63,7 @@ Route::group(['middleware' => 'admin.login'],function(){
 Route::get('/login','Admin\LoginController@index');
 Route::post('/doLogin','Admin\LoginController@doLogin');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //钱敏
-
 Route::get('/qm', 'Hotel\Home\HomeController@index');
 Route::get('/qm/admin', 'Hotel\Admin\AdminController@index');
 Route::get('/qm/hotel', 'Hotel\Home\HotelController@index');
@@ -123,3 +109,38 @@ Route::get('/qm/food/delete/{id}','Hotel\Admin\FoodController@delete');
 Route::get('/qm/food/edit/{id}','Hotel\Admin\FoodController@edit');
 Route::post('/qm/food/doEdit','Hotel\Admin\FoodController@doEdit');
 Route::get('/qm/food/show/{id}','Hotel\Admin\FoodController@show');
+Route::get('/qm/server/index','Hotel\Admin\ServerController@index');
+Route::get('/qm/server/add','Hotel\Admin\ServerController@add');
+Route::post('/qm/server/doAdd','Hotel\Admin\ServerController@doAdd');
+Route::get('/qm/server/delete/{id}','Hotel\Admin\ServerController@delete');
+Route::get('/qm/server/edit/{id}','Hotel\Admin\ServerController@edit');
+Route::post('/qm/server/doEdit','Hotel\Admin\ServerController@doEdit');
+Route::get('/qm/server/show/{id}','Hotel\Admin\ServerController@show');
+Route::get('/qm/order/index','Hotel\Admin\OrderController@index');
+Route::get('/qm/order/add','Hotel\Admin\OrderController@add');
+Route::post('/qm/order/doAdd','Hotel\Admin\OrderController@doAdd');
+Route::get('/qm/order/delete/{id}','Hotel\Admin\OrderController@delete');
+Route::get('/qm/order/edit/{id}','Hotel\Admin\OrderController@edit');
+Route::post('/qm/order/doEdit','Hotel\Admin\OrderController@doEdit');
+Route::get('/qm/order/show/{id}','Hotel\Admin\OrderController@show');
+Route::get('/qm/close/index','Hotel\Admin\CloseController@index');
+Route::get('/qm/close/add','Hotel\Admin\CloseController@add');
+Route::post('/qm/close/doAdd','Hotel\Admin\CloseController@doAdd');
+Route::get('/qm/close/delete/{id}','Hotel\Admin\CloseController@delete');
+Route::get('/qm/close/edit/{id}','Hotel\Admin\CloseController@edit');
+Route::post('/qm/close/doEdit','Hotel\Admin\CloseController@doEdit');
+Route::get('/qm/close/show/{id}','Hotel\Admin\CloseController@show');
+Route::get('/qm/clean/index','Hotel\Admin\CleanController@index');
+Route::get('/qm/clean/add','Hotel\Admin\CleanController@add');
+Route::post('/qm/clean/doAdd','Hotel\Admin\CleanController@doAdd');
+Route::get('/qm/clean/delete/{id}','Hotel\Admin\CleanController@delete');
+Route::get('/qm/clean/edit/{id}','Hotel\Admin\CleanController@edit');
+Route::post('/qm/clean/doEdit','Hotel\Admin\CleanController@doEdit');
+Route::get('/qm/clean/show/{id}','Hotel\Admin\CleanController@show');
+Route::get('/qm/configure/index','Hotel\Admin\ConfigureController@index');
+Route::get('/qm/configure/add','Hotel\Admin\ConfigureController@add');
+Route::post('/qm/configure/doAdd','Hotel\Admin\ConfigureController@doAdd');
+Route::get('/qm/configure/delete/{id}','Hotel\Admin\ConfigureController@delete');
+Route::get('/qm/configure/edit/{id}','Hotel\Admin\ConfigureController@edit');
+Route::post('/qm/configure/doEdit','Hotel\Admin\ConfigureController@doEdit');
+Route::get('/qm/configure/show/{id}','Hotel\Admin\ConfigureController@show');

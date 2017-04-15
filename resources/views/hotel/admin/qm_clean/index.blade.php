@@ -7,7 +7,7 @@
 	
 				<div class="row">
                     <div class="col-lg-12">
-                        <h2>餐饮管理</h2> 
+                        <h2>保洁管理</h2> 
                         <h4><a href="/qm/food/add">新增</a></h4>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover">
