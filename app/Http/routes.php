@@ -62,11 +62,7 @@ Route::group(['middleware' => 'admin.login'],function(){
 });
 Route::get('/login','Admin\LoginController@index');
 Route::post('/doLogin','Admin\LoginController@doLogin');
-//
-//
-////
-//
-//
+
 //钱敏
 Route::get('/qm', 'Hotel\Home\HomeController@index');
 Route::get('/qm/admin', 'Hotel\Admin\AdminController@index');
