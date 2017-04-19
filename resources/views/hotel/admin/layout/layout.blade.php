@@ -59,7 +59,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                 	<li>
-                        <a href="{{asset('/qm/woker/index')}}"><i class="fa fa-fw fa-bar-chart-o"></i>酒店内部人员管理1</a>
+                        <a href="{{asset('/qm/woker/index')}}"><i class="fa fa-fw fa-bar-chart-o"></i>酒店内部人员管理</a>
                     </li>
                     <li>
                         <a href="{{asset('/qm/user/index')}}"><i class="fa fa-fw fa-bar-chart-o"></i>酒店会员管理</a>
