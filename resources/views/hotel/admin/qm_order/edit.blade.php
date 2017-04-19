@@ -7,59 +7,41 @@
 	
 			<div class="row">
                     <div class="col-lg-3">
-                        <form role="form" method="post" action="{{asset("/qm/food/doEdit")}}" enctype="multipart/form-data">
+                        <form role="form" method="post" action="{{asset("/qm/order/doEdit")}}" enctype="multipart/form-data">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                        <input type="hidden" name="id" value="{{$info->id}}">
-                       <div class="form-group">
-                                <label>餐饮名称</label>
-                                <input class="form-control" name="name" value="{{$info->name}}" >
-                            </div>
-							<div class="form-group">					
-                                <label> 餐饮类型</label>
-                                <select class="form-control" name="cid">
-                                @foreach($cate as $v)
-                                    <option value="{{$v->id}}" @if($v->id == $info->cid ) selected @endif>{{$v->name}}</option>
-                                 @endforeach   
+                            <div class="form-group" >
+                                <label>是否入住</label>
+                                <select class="form-control" name="status" id="box1">
+                                    <option value="1" @if($info->status == 1) selected @endif>是</option>
+                                    <option value="0" @if($info->status == 0) selected @endif>否</option>
                                 </select>
-                            </div> 
-                             <div class="form-group">
-                                <label>适用人群</label>
-                                <input class="form-control" name="on_people"   value="{{$info->on_people}}">   
-                            </div> 
-                            <div class="form-group">
-                                <label>供给时间</label>
-                                <input class="form-control" name="time"   value="{{$info->time}}">   
                             </div>
-                            <div class="form-group">
-                                <label>价格</label>
-                                <input class="form-control" name="price" value="{{$info->price}}">
-                                <p class="help-block">人民币.</p>
+                            <div class="form-group" >
+                                <label>是否离店</label>
+                                <select class="form-control" name="is_out" id="box2" style="display:none;">
+                                    <option value="1" @if($info->is_out == 1) selected @endif>是</option>
+                                    <option value="0" @if($info->is_out == 0) selected @endif>否</option>
+                                </select>
                             </div>
-                            <div class="form-group">
-                                <label>餐饮总量</label>
-                                <input class="form-control" name="count" value="{{$info->count}}">
-                            </div>
-                            <div class="form-group">
-                                <label>包含内容</label>
-                                <input class="form-control" name="content" value="{{$info->content}}">
-                            </div>                         							
+                            <script>
+							$("select[name='status']").change(function(){
+								var selectedValue=$(this).val();
+								if(selectedValue==1){
 
-                            <div class="form-group">
-                                <label>缩略图</label>
-                                <input type="file" name="pic">
-                            </div>
-                            <div>
-                            <input type="hidden" value="{{$info->pic}}" name="ifpic">
-                            	<img src="{{$info->pic}}" width="100px;">
-                            </div>
-                            <div class="form-group">
-                                <label>是否已下架</label>
-                                <select class="form-control" name="is_onsale">
-                                    <option value="1" @if($info->is_onsale == 1) selected @endif>是</option>
-                                    <option value="2" @if($info->is_onsale == 2) selected @endif>否</option>
-                                </select>
-                            </div>
-                            
+							        $("#box2").show();
+
+							        
+							    }
+								if(selectedValue==0){
+
+							        $("#box2").hide();
+
+							        
+							    }
+								});
+							
+                            </script>
                             <button type="submit" class="btn btn-default">修改</button>
                             <button type="reset" class="btn btn-default">重置</button>
 

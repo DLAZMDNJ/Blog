@@ -8,20 +8,22 @@
 				<div class="row">
                     <div class="col-lg-12">
                         <h2>保洁管理</h2> 
-                        <h4><a href="/qm/food/add">新增</a></h4>
+              
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th>编号</th>
-                                        <th>餐饮类别</th>
-                                        <th>数量</th>
-                                        <th>包含内容</th>
-                                        <th>适用人群</th>                               
-                                        <th>供给时间</th>
-                                        <th>是否已下架</th>
-                                        <th>配图</th>
-                                        <td>操作者</td>
+                                        <th>订单编号</th>
+                                        <th>订单名称</th>
+                                        <th>订单人</th>
+                                        <th>房间信息</th>
+                                        <th>创建时间</th>                               
+                                        <th>入住时间</th>
+                                        <th>离开时间</th>
+                                        <th>订单数量</th>
+                                        <td>备注</td>
+                                        <td>是否保洁</td>
+                                        <td>是否上架</td>
                                         <th>操作</th>
                                     </tr>
                                 </thead>
@@ -30,22 +32,31 @@
                                     	@foreach($list as $v)
                                     		<td>{{$v->id}}</td>
                                     	<td>
-                                    		@foreach($cate as $m)
-                                    			@if($m->id == $v->cid)
-                                    				{{$m->name}}
+                                    		@foreach($user as $m)
+                                    			@if($m->id == $v->uid)
+                                    			{{$m -> realname}}
                                     			@endif
                                     		@endforeach
                                     	</td>
-                                    	<td>{{$v->count}}</td>
-                                    	<td>{{$v->content}}</td>
-                                    	<td>{{$v->on_people}}</td>
+                                    	<td>
+                                    		@foreach($home as $n)
+                                    			@if($n->id == $v->hid)
+                                    			{{$n -> name}}
+                                    			@endif
+                                    		@endforeach
+                                    	</td>
+                                    	<td>{{$v->name}}</td>
+                                    	<td>{{$v->ctime}}</td>
+                                    	<td>{{$v->itime}}</td>
                                     	<td>{{$v->time}}</td>
-                                    	<td>@if($v->is_onsale == 1) 是 @endif @if($v->is_onsale == 2) 否 @endif</td>
-                                   		<td><img src="{{$v->pic}}" width="100px;"></td>
-                                    	<td>{{$v->uid}}</td>
+                                    	<td>{{$v->count}}</td>
+                                    	<td>{{$v->tips}}</td>
+                                    	<td>@if($v->is_clean == 1) 是 @else 异常订单 @endif</td>
+                           				<td>@if($v->is_onsale == 0) 否 @else  异常订单 @endif</td>
+
                                     	                     
                                     	<td>
-                                    		<a href="/qm/food/edit/{{$v->id}}">修改</a>----|----<a href="/qm/food/delete/{{$v->id}}">删除</a>    
+                                    		<a href="/qm/clean/edit/{{$v->id}}">修改</a>----|----<a href="/qm/order/clean/{{$v->id}}">删除</a>    
                                         </td>                               
                                         </tr>	
                                    		@endforeach
