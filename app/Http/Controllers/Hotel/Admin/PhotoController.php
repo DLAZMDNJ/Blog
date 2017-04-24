@@ -45,7 +45,7 @@ class PhotoController extends Controller
 		}
 // 		dd($pic);
 	$res = DB::table('qm_photo')->where('id',$data['id'])->update(['description'=>$data['description'],
-		'pic'=>$pic	
+		'pic'=>$pic,'tips1'=>$data['tips1'],'tips2'=>$data['tips2'],'tips3'=>$data['tips3']
 	]);
 	if($res)
 	{

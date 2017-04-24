@@ -17,7 +17,9 @@
                                         
                                         <th>图片</th>
                                         <th>描述</th>
-                                        
+                                        <th>标题1</th>
+                                        <th>标题2</th>
+                                        <th>标题3</th>
                                         <th>操作</th>
                                     </tr>
                                 </thead>
@@ -29,12 +31,14 @@
                                     
                                     	<td><img src="{{$v->pic}}" width="100px;"></td>
                                     	<td>{{$v->description}}</td>
-                                    	                     
+                                    	<td>{{$v->tips1}}</td>
+                                    	<td>{{$v->tips2}}</td>
+                                    	<td>{{$v->tips3}}</td>                    
                                     	<td>
                                     		<a href="/qm/photo/edit/{{$v->id}}">修改   
                                         </td>                               
                                         </tr>	
-                                   		@endforeach
+                               @endforeach
                                   
 
                                 </tbody>

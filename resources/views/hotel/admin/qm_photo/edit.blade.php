@@ -15,9 +15,19 @@
                              <div class="form-group">
                                 <label>图片描述</label>
                                 <input class="form-control" name="description"  value="{{$info->description}}">
-                      
                             </div>
-                            
+                            <div class="form-group">
+                                <label>标题1</label>
+                                <input class="form-control" name="tips1"  value="{{$info->tips1}}">
+                            </div>
+                            <div class="form-group">
+                                <label>标题2</label>
+                                <input class="form-control" name="tips2"  value="{{$info->tips2}}">
+                            </div>
+                            <div class="form-group">
+                                <label>标题3</label>
+                                <input class="form-control" name="tips3"  value="{{$info->tips3}}">
+                            </div>
                             
                                                   							
 

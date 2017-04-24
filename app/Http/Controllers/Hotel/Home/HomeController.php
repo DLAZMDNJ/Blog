@@ -15,6 +15,8 @@ class HomeController extends Controller
     	$home = DB::table('qm_home')->get();
     	$user = DB::table('qm_user')->get();
     	$server = DB::table('qm_server')->get();
-    	return view('hotel.home.index');
+    	$category = DB::table('qm_category')->get();
+    	$photo = DB::table('qm_photo')->get();
+    	return view('hotel.home.index',['photo'=>$photo,'category'=>$category,'home'=>$home]);
     }
 }
