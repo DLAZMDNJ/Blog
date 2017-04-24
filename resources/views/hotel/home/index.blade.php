@@ -91,7 +91,7 @@
 					</div>
 					<div class="desc">
 						<h3>{{$h->name}}</h3>
-						<p>这些是介绍内容，有空添加</p>
+						<p>{{$h->description}}</p>
 						<p><a href="#" class="btn btn-primary btn-luxe-primary">马上预定 <i class="ti-angle-right"></i></a></p>
 					</div>
 				</div>
@@ -99,7 +99,7 @@
 				<div class="feature-full-1col">
 					<div class="desc">
 						<h3>{{$h->name}}</h3>
-						<p>这些是介绍内容，有空添加</p>
+						<p>{{$h->description}}</p>
 						<p><a href="#" class="btn btn-primary btn-luxe-primary">马上预定 <i class="ti-angle-right"></i></a></p>
 					</div>
 					<div class="image" style="background-image: url({{$h->pic}});">
