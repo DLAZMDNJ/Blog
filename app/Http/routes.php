@@ -144,3 +144,11 @@ Route::get('/qm/configure/delete/{id}','Hotel\Admin\ConfigureController@delete')
 Route::get('/qm/configure/edit/{id}','Hotel\Admin\ConfigureController@edit');
 Route::post('/qm/configure/doEdit','Hotel\Admin\ConfigureController@doEdit');
 Route::get('/qm/configure/show/{id}','Hotel\Admin\ConfigureController@show');
+
+Route::get('/qm/photo/index','Hotel\Admin\PhotoController@index');
+Route::get('/qm/photo/add','Hotel\Admin\PhotoController@add');
+Route::post('/qm/photo/doAdd','Hotel\Admin\PhotoController@doAdd');
+Route::get('/qm/photo/delete/{id}','Hotel\Admin\PhotoController@delete');
+Route::get('/qm/photo/edit/{id}','Hotel\Admin\PhotoController@edit');
+Route::post('/qm/photo/doEdit','Hotel\Admin\PhotoController@doEdit');
+Route::get('/qm/photo/show/{id}','Hotel\Admin\PhotoController@show');

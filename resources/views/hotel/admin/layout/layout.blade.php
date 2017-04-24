@@ -89,6 +89,9 @@
                         <a href="{{asset('/qm/clean/index')}}"><i class="fa fa-fw fa-wrench"></i>保洁管理</a>
                     </li>
                     <li>
+                        <a href="{{asset('/qm/photo/index')}}"><i class="fa fa-fw fa-wrench"></i>图片管理</a>
+                    </li>
+                    <li>
                         <a href="{{asset('/qm/configure/index')}}"><i class="fa fa-fw fa-wrench"></i>网址配置管理</a>
                     </li>                                
                 </ul>
