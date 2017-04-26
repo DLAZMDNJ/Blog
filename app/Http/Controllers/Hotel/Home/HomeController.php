@@ -12,11 +12,11 @@ class HomeController extends Controller
     //
     public function index()
     {
-    	$home = DB::table('qm_home')->get();
+    	$home = DB::table('qm_home')->limit(4)->get();
     	$user = DB::table('qm_user')->get();
     	$server = DB::table('qm_server')->get();
     	$category = DB::table('qm_category')->get();
     	$photo = DB::table('qm_photo')->get();
-    	return view('hotel.home.index',['photo'=>$photo,'category'=>$category,'home'=>$home]);
+    	return view('hotel.home.index',['photo'=>$photo,'category'=>$category,'home'=>$home,'server'=>$server]);
     }
 }
