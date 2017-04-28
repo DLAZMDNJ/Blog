@@ -2,7 +2,7 @@
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>后台登录</title>
+<title>会员登录</title>
 <meta name="author" content="DeathGhost">
 <link rel="stylesheet" type="text/css" href="{{asset("/admin/login/style.css")}}" tppabs="css/style.css">
 <style>

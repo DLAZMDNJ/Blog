@@ -153,6 +153,9 @@ Route::post('/qm/photo/doEdit','Hotel\Admin\PhotoController@doEdit');
 Route::get('/qm/photo/show/{id}','Hotel\Admin\PhotoController@show');
 Route::post('/qm/home/order','Hotel\Home\OrderController@index');
 Route::get('/qm/home/order','Hotel\Home\OrderController@design');
+Route::get('/qm/home/register','Hotel\Home\RegisterController@index');
+Route::post('qm/home/register/add','Hotel\Home\RegisterController@add');
+
 
 
 
