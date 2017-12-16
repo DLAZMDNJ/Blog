@@ -11,6 +11,8 @@
 |
 */
 
+Route::post('/admin/user/test', 'Admin\UserController@test');
+
 Route::get('/', 'Home\HomeController@index');
 //中间键控制到登录页面
 Route::group(['middleware' => 'admin.login'],function(){
